@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <!-- hero section starts-->
+    <div class="hero">
+        <nav>
+            <h2 class="logo">Port<span>folio</span></h2>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">My works</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="https://www.youtube.com/@ayusmanparida1585" target="_blank" class="btn">Subscribe</a>
+        </nav>
+        <div class="content">
+            <h4>Hello my name is</h4>
+            <span id="ayusman">Ayusman Parida</span>
+            <h3>I am a Digital artist</h3>
+            <img src="img/Untitled300 (1)-02.png" alt="profile-img">
+
+        </div>
+    </div>
+    <!-- About -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/about.jpg" alt="profile image">
+                </div>
+                <div class="about-col-2">
+                    <h1>About me</h1>
+                    <p>I am a digital artist from India, currently I am studying MCA. Every techniques related to
+                        digital arts as well as traditional arts I have learnt from internet. I have worked on few
+                        freelance projects for foreign clients as well as local clients. Most of the projects are from
+                        fiverr. Infact you can connect me through instagram as well as you can check my work progress on
+                        my youtube channel (Subscribe the channel using the Subscribe button on the home page) </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Illustration</span><br>Illustrating artworks digitally</li>
+                            <li><span>Concept art</span><br>Creating cinematic concept arts for storyboard</li>
+                            <li><span>Photobashing</span><br>Turn imagination into reallity using images</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Personal</span><br>Learning and creating from 2 years</li>
+                            <li><span>Professional</span><br>11 freelance projects</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ..............srvices..... -->
+    <div id="services">
+        <div class="container">
+            <h1>My services</h1>
+            <div class="services-list">
+                <div>
+                    <h2>Illustration</h2>
+                    <p>I can trun your imagination into a digitally illustrated art-piece.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <h2>Graphic design</h2>
+                    <p>I can create designs for websites as well as posters, logos, avatars and mascots</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <h2>Fan art</h2>
+                    <p>I can create customized fan-arts, may be it is from anime, movies or tv-show.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <h2>Photo-manipulation</h2>
+                    <p>Using images I can turn images into your reality using Photobashing technique.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------my works------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1>My works</h1>
+            <div class="work-list">
+                <div class="work">
+                    <div class="full-img" id="fullImgBox">
+                        <img src="img/1-131121112Z0.jpg" alt="full">
+                        <span onclick="close()">X</span>
+                    </div>
+                    <img src="img/fan.png" alt="example">
+                    <div class="layer">
+                        <h3>Fan-art</h3>
+                        <p>This section contains few samples of fan-arts</p>
+                        <a href="#"><i class="fa-solid fa-eye" onclick="open()"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/ill.png" alt="example">
+                    <div class="layer">
+                        <h3>Illustration</h3>
+                        <p>This section contains few samples of illustrations</p>
+                        <a href="#"><i class="fa-solid fa-eye" onclick="open()"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/pm.jpeg" alt="example">
+                    <div class="layer">
+                        <h3>Photobashing</h3>
+                        <p>This section contains few samples of photobashing</p>
+                        <a href="#"><i class="fa-solid fa-eye" onclick="open()"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----contact----- -->
+    <div id="contact">
+        <div class="container">
+            <div class="contact-left">
+                <h1>Contact me</h1>
+                <p><i class="fa-solid fa-envelope"></i>paridaayusman152@gmail.com</p>
+                <p><i class="fa-sharp fa-solid fa-phone"></i>8342983389</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/ayusman_79/" target="_blank"><i
+                            class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://www.youtube.com/@ayusmanparida1585" target="_blank"><i
+                            class="fa-brands fa-youtube"></i></a>
+                    <a href="https://in.linkedin.com/in/ayusman-parida-417646218" target="_blank"><i
+                            class="fa-brands fa-linkedin"></i></a>
+
+                </div>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" id="msg" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+                <span id="ms"></span>
+            </div>
+
+        </div>
+        <div class="copyright">
+            <p>Copyright © Ayusman. All rights are reserved</p>
+        </div>
+    </div>
+    <script>
+        var tabLinks = document.getElementsByClassName("tab-links");
+        var tabContents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tabLink of tabLinks) {
+                tabLink.classList.remove("active-link");
+            }
+            for (tabContent of tabContents) {
+                tabContent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxqKajqGI2nwPvaCY0WzUVN4Iq7ODxKoAkurAHaHVtq5aQfgpDJWjT0UId7H0vMPGOp/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("ms")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 2000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
